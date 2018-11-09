@@ -1,0 +1,31 @@
+#!/bin/python3
+
+from turtle import *
+from random import randint
+
+
+
+penup()
+
+
+ivy = Turtle()
+ivy.shape('turtle')
+ivy.color('green')
+
+ivy.penup()
+ivy.goto(-160, 40)
+ivy.pendown()
+
+jim = Turtle()
+jim.shape('turtle')
+jim.color('orange')
+
+jim.penup()
+jim.goto(-160, 10)
+jim.pendown()
+
+
+for turn in range(100):
+  ivy.forward(randint(1,5))
+  jim.forward(randint(1,5))
+  
